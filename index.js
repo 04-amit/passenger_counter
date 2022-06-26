@@ -1,15 +1,15 @@
-let saveEl = document.getElementById("sa");
-let countEl = document.getElementById("count");
+let previousEntries = document.getElementById("previousEntries");
+let peopleCount = document.getElementById("peopleCount");
 
 let count = 0;
 const increment = () => {
   count++;
-  countEl.innerText = count;
+  peopleCount.innerText = count;
 };
 
 const save = () => {
   let countStr = count + " - ";
-  saveEl.textContent += countStr;
+  previousEntries.textContent += countStr;
   count = 0;
-  countEl.innerText = count;
+  peopleCount.innerText = count;
 };
